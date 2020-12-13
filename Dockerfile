@@ -1,10 +1,7 @@
 FROM ruby:2.7
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
 RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-# RUN apt-get update && apt-get install -y yarn
 RUN apt-get update -qq && apt-get install -y yarn nodejs postgresql-client
-# RUN install -g npm
-# RUN npm install -g yarn
 RUN mkdir /myapp
 WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
