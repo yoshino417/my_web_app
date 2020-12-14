@@ -1,0 +1,12 @@
+ja:
+
+# Japanese localization of model and model attribute
+  activerecord:
+    models:
+      book: "ユーザー"
+    attributes:
+      book:
+        title: "タイトル"
+        memo: "メモ"
+        author: "著者"
+        picture: "イメージ"

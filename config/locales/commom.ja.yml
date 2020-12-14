@@ -1,0 +1,20 @@
+ja:
+
+  headline:
+    new book: 新規登録
+    editing book: 編集
+    books: 書籍一覧
+
+  label:
+    title: タイトル
+    memo: メモ
+    author: 著者
+    picture: イメージ
+
+  button:
+    new: 新規登録
+    edit: 編集
+    back: 戻る
+    show: 詳細
+    index: 一覧
+    destroy: 削除

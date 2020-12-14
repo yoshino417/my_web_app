@@ -1,12 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Books</h1>
+<h1><%= t('headline.books') %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Memo</th>
+      <th><%= t('label.title') %></th>
+      <th><%= t('label.memo') %></th>
+      <th><%= t('label.author') %></th>
+      <th><%= t('label.picture') %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +18,11 @@
       <tr>
         <td><%= book.title %></td>
         <td><%= book.memo %></td>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= book.author %></td>
+        <td><%= book.picture %></td>
+        <td><%= link_to t('button.show'), book %></td>
+        <td><%= link_to t('button.edit'), edit_book_path(book) %></td>
+        <td><%= link_to t('button.destroy'), book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Book', new_book_path %>
+<%= link_to t('button.new'), new_book_path %>
