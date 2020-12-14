@@ -1,23 +1,5 @@
 ja:
 
-  title:
-    new book: 新規登録
-    editing book: 編集
-    books: 書籍一覧
-
-  label:
-    title: "タイトル"
-    memo: "メモ"
-    author: "著者"
-    picture: "イメージ"
-
-  button:
-    new: 新規登録
-    edit: 編集
-    back: 戻る
-    show: 詳細
-    index: 一覧
-    destroy: 削除
   activerecord:
     errors:
       messages:
@@ -25,16 +7,7 @@ ja:
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
-    #ここからラベルの日本語対応コードを追加
-    models:
-      book: "ユーザー"
-    attributes:
-      book:
-        title: "タイトル"
-        memo: "メモ"
-        author: "著者"
-        picture: "イメージ"
-    #ここまで
+
   date:
     abbr_day_names:
     - 日
@@ -164,8 +137,8 @@ ja:
     template:
       body: 次の項目を確認してください
       header:
-        one: "%{model}にエラーが発生しました"
-        other: "%{model}に%{count}個のエラーが発生しました"
+        one: "次のエラーが発生しました"
+        other: "%{count}個のエラーが発生しました"
   helpers:
     select:
       prompt: 選択してください
